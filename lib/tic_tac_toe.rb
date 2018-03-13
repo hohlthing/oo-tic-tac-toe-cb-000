@@ -39,7 +39,6 @@ class TicTacToe
   end
 
   def turn
-    display_board
     puts "Please enter 1-9:"
     input = gets.strip
     index = input_to_index(input)
@@ -98,6 +97,7 @@ class TicTacToe
   end
 
   def play
+    display_board
     until over?
       turn
     end
